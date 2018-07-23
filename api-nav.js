@@ -49,10 +49,14 @@ class ApiNav extends PolymerElement {
 
   ready() {
     super.ready();
-    if(window.location.pathname.toLowerCase() === 'games'){
+    if(window.location.pathname.toLowerCase().indexOf('games') != -1){
       this.selected = 1;
     }else if(window.location.pathname.toLowerCase() === 'about'){
       this.selected = 2;
+    }else if(window.location.href === 'https://statsplash.com'){
+      this.selected = 0;
+    }else{
+      this.selected = -1;
     }
   }
 }
