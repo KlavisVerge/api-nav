@@ -1,5 +1,6 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '@polymer/paper-tabs/paper-tabs.js';
+import '@polymer/paper-styles/paper-styles.js';
 
 /**
  * `api-nav`
@@ -25,8 +26,6 @@ class ApiNav extends PolymerElement {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: var(--paper-font-common-base_-_font-family);
-        font-size: 16px;
       }
     </style>
     <paper-tabs selected=[[selected]] link>
