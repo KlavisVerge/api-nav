@@ -25,6 +25,7 @@ class ApiNav extends PolymerElement {
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: var(--paper-font-common-base_-_font-family);
       }
     </style>
     <paper-tabs selected=[[selected]] link>
