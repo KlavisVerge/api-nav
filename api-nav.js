@@ -29,9 +29,9 @@ class ApiNav extends PolymerElement {
       }
     </style>
     <paper-tabs selected=[[selected]] link>
-      <paper-tab><a href="https://statsplash.com">Home</a></paper-tab>
-      <paper-tab><a href="https://statsplash.com/games">Games</a></paper-tab>
-      <paper-tab><a href="https://statsplash.com/about">About</a></paper-tab>
+      <paper-tab><a href="https://www.statsplash.com">Home</a></paper-tab>
+      <paper-tab><a href="https://www.statsplash.com/games">Games</a></paper-tab>
+      <paper-tab><a href="https://www.statsplash.com/about">About</a></paper-tab>
     </paper-tabs>
     `;
   }
@@ -54,7 +54,7 @@ class ApiNav extends PolymerElement {
       this.selected = 1;
     }else if(window.location.pathname.toLowerCase() === 'about'){
       this.selected = 2;
-    }else if(window.location.href === 'https://statsplash.com'){
+    }else if(window.location.href === 'https://www.statsplash.com'){
       this.selected = 0;
     }else{
       this.selected = -1;
